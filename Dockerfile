@@ -25,5 +25,7 @@ RUN apt-get install -y xvfb
 # have to run firefox for the first time to avoid seeing the privacy notice later
 RUN sudo -u student timeout 3 xvfb-run firefox || true
 
+ADD entrypoint /entrypoint
+
 ENTRYPOINT ["/entrypoint"]
 

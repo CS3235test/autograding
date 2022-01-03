@@ -10,5 +10,5 @@ outputs:
     description: 'The score the student got'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://corank/autograding:latest'
 
