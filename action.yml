@@ -1,14 +1,9 @@
 name: 'Autograding'
 description: 'Autograding action for CS3235'
-#inputs:
-  #who-to-greet:  # id of input
-    #description: 'Who to greet'
-    #required: true
-    #default: 'World'
 outputs:
   score: # id of output
     description: 'The score the student got'
 runs:
   using: 'docker'
-  image: 'docker://corank/autograding:latest'
+  image: 'docker://corank/cs3235-seclab:assignment'
 
